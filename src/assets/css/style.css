@@ -14,6 +14,7 @@ h1 {
 } */
 
 .card {
+  align-items: center;
   position: fixed;
   top: 20vh;
   left: 5%;
@@ -23,7 +24,7 @@ h1 {
   border-radius: 14px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   z-index: 30;
-  animation: slide-down 300ms ease-out forwards;
+  animation: slide-down 1200ms ease-out forwards;
 }
 @media (min-width: 768px) {
   .card {
@@ -62,7 +63,8 @@ h1 {
 
 #new-contact-form {
   display: grid;
-  align-items: center;
+  
+  /* align-items: center; */
   
   
 }
@@ -118,4 +120,25 @@ h1 {
   border: 1px solid #ccc;
   font: inherit;
   padding-left: 0.5rem;
+}
+
+#submit {
+  font: inherit;
+  cursor: pointer;
+  background-color: #8a2b06;
+  border: 1px solid #8a2b06;
+  color: white;
+  padding: 0.25rem 2rem;
+  border-radius: 20px;
+  font-weight: bold;
+  width: 10rem;
+  
+  margin-top: 1rem;
+  
+}
+
+#submit:hover,
+#submit:active {
+  background-color: goldenrod;
+  border-color: goldenrod;
 }
