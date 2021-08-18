@@ -1,0 +1,121 @@
+body {
+  margin: 0%;
+  background-color: #3f3f3f;
+}
+
+h1 {
+}
+
+/* #header {
+  padding: 25px;
+  margin: 5px;
+  display: block;
+
+} */
+
+.card {
+  position: fixed;
+  top: 20vh;
+  left: 5%;
+  width: 90%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+}
+@media (min-width: 768px) {
+  .card {
+    width: 40rem;
+    left: calc(50% - 20rem);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#add-contact {
+  font: inherit;
+  cursor: pointer;
+  background-color: #8a2b06;
+  border: 1px solid #8a2b06;
+  color: white;
+  padding: 0.25rem 2rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+#add-contact:hover,
+#add-contact:active {
+  background-color: goldenrod;
+  border-color: goldenrod;
+}
+
+#new-contact-form {
+  display: grid;
+  align-items: center;
+  
+  
+}
+
+#new-contact-form label {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+#name {
+  width: 12rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font: inherit;
+  padding-left: 0.5rem;
+}
+
+#email {
+  width: 12rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font: inherit;
+  padding-left: 0.5rem;
+}
+
+#phone {
+  width: 12rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font: inherit;
+  padding-left: 0.5rem;
+}
+
+#company {
+  width: 12rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font: inherit;
+  padding-left: 0.5rem;
+}
+
+#notes {
+  width: 12rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font: inherit;
+  /* padding-left: 0.5rem; */
+}
+
+#twitter {
+  width: 12rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font: inherit;
+  padding-left: 0.5rem;
+}
