@@ -4,6 +4,7 @@ body {
 }
 
 h1 {
+  text-align: center;
 }
 
 /* #header {
@@ -14,9 +15,8 @@ h1 {
 } */
 
 .card {
-  align-items: center;
-  position: fixed;
-  top: 20vh;
+  position: relative;
+  top: 10vh;
   left: 5%;
   width: 90%;
   background-color: white;
@@ -141,4 +141,8 @@ h1 {
 #submit:active {
   background-color: goldenrod;
   border-color: goldenrod;
+}
+
+#contact-list {
+  display: flex;
 }
